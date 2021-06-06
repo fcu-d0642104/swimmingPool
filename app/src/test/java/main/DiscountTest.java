@@ -4,10 +4,10 @@ import org.junit.jupiter.api.*;
 
 public class DiscountTest {
 
-	@DisplayName("ä¸åŒå¹´ç´€çš„æŠ˜æ‰£")
+  @DisplayName("¤£¦P¦~¬öªº§é¦©")
 	@Nested
 	class DifferentAges {
-		String dateTime = "2021-05-26 é€±ä¸‰ 14:30:00";
+    String dateTime = "2021-05-26 ¶g¤T 14:30:00";
 
 		@Test
 		public void testAgeHasDiscount() throws Throwable {
@@ -27,20 +27,20 @@ public class DiscountTest {
 		}
 	}
 
-	@DisplayName("ç‡Ÿæ¥­èˆ‡éç‡Ÿæ¥­æ™‚é–“")
+  @DisplayName("Àç·~»P«DÀç·~®É¶¡")
 	@Nested
 	class DifferentBusinessHours {
 		@Test
 		public void testEarlyBirdBusiness() throws Throwable {
 			Identity identity = new Identity(25, false, false);
-			Discount discount = new Discount(identity, "2021-05-26 é€±ä¸‰ 06:30:00");
+			Discount discount = new Discount(identity, "2021-05-26 ¶g¤T 06:30:00");
 			Assertions.assertEquals(0.8, discount.getDiscount());
 		}
 
 		@Test
 		public void testHaveBusiness() throws Throwable {
 			Identity identity = new Identity(25, false, false);
-			Discount discount = new Discount(identity, "2021-05-26 é€±ä¸‰ 10:30:00");
+			Discount discount = new Discount(identity, "2021-05-26 ¶g¤T 10:30:00");
 			Assertions.assertEquals(1, discount.getDiscount());
 		}
 	}

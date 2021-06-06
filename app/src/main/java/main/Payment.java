@@ -12,15 +12,15 @@ public class Payment {
         System.out.println(week);
 
         switch (week) {
-            case "閫变竴":
-            case "閫变簩":
-            case "閫变笁":
-            case "閫卞洓":
-            case "閫变簲":
+            case "秅":
+            case "秅":
+            case "秅":
+            case "秅":
+            case "秅き":
                 money = weekdayCharge;
                 break;
-            case "閫卞叚":
-            case "閫辨棩":
+            case "秅せ":
+            case "秅ら":
                 money = weekendCharge;
                 break;
         }
